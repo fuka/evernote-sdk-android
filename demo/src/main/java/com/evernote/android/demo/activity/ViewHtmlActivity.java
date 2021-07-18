@@ -18,12 +18,12 @@ import com.evernote.edam.error.EDAMNotFoundException;
 import com.evernote.edam.error.EDAMSystemException;
 import com.evernote.edam.error.EDAMUserException;
 import com.evernote.thrift.TException;
-import com.squareup.okhttp.Response;
 
 import java.io.IOException;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import okhttp3.Response;
 
 /**
  * @author rwondratschek

@@ -25,8 +25,6 @@
  */
 package com.evernote.client.conn.mobile;
 
-import com.squareup.okhttp.internal.Util;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -35,6 +33,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 import androidx.annotation.NonNull;
+import okhttp3.internal.Util;
 
 /**
  * Holds all the data in memory until a threshold is reached. Then it writes all the data on disk.

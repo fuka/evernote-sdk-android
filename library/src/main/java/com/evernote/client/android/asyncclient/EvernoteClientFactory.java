@@ -19,8 +19,6 @@ import com.evernote.edam.userstore.AuthenticationResult;
 import com.evernote.edam.userstore.UserStore;
 import com.evernote.thrift.TException;
 import com.evernote.thrift.protocol.TBinaryProtocol;
-import com.squareup.okhttp.ConnectionPool;
-import com.squareup.okhttp.OkHttpClient;
 
 import java.io.File;
 import java.util.HashMap;
@@ -33,6 +31,8 @@ import java.util.concurrent.TimeUnit;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import okhttp3.ConnectionPool;
+import okhttp3.OkHttpClient;
 
 /**
  * A factory to create async wrappers around a {@link NoteStore.Client}. Use the corresponding
@@ -447,12 +447,14 @@ public class EvernoteClientFactory {
         }
 
         private OkHttpClient createDefaultHttpClient() {
-            OkHttpClient httpClient = new OkHttpClient();
-            httpClient.setConnectTimeout(10, TimeUnit.SECONDS);
-            httpClient.setReadTimeout(10, TimeUnit.SECONDS);
-            httpClient.setWriteTimeout(20, TimeUnit.SECONDS);
-            httpClient.setConnectionPool(new ConnectionPool(20, 2 * 60 * 1000));
-            return httpClient;
+
+            OkHttpClient.Builder builder = new OkHttpClient.Builder()
+            .connectTimeout(10, TimeUnit.SECONDS)
+            .readTimeout(10, TimeUnit.SECONDS)
+            .writeTimeout(20, TimeUnit.SECONDS)
+            .connectionPool(new ConnectionPool(20, 2 * 60 * 1000, TimeUnit.MILLISECONDS));
+
+            return builder.build();
         }
 
         private ByteStore.Factory createDefaultByteStore(Context context) {
