@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply from: '../build-config/gradle-quality.gradle'
+// apply from: '../build-config/gradle-quality.gradle'
 
 dependencies {
     compile "com.android.support:support-v4:$rootProject.ext.supportLibVersion"
@@ -33,11 +33,11 @@ android {
     }
 
     lintOptions {
-        abortOnError true
+        abortOnError false
 
-        htmlOutput file("$project.buildDir/reports/lint/lint.html")
-        xmlOutput file("$project.buildDir/reports/lint/lint.xml")
+        // htmlOutput file("$project.buildDir/reports/lint/lint.html")
+        // xmlOutput file("$project.buildDir/reports/lint/lint.xml")
     }
 }
 
-apply from: '../build-config/gradle-push.gradle'
+// apply from: '../build-config/gradle-push.gradle'
