@@ -1,6 +1,5 @@
 package com.evernote.android.demo.task;
 
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 
 import com.evernote.client.android.EvernoteSession;
@@ -12,6 +11,8 @@ import com.evernote.edam.type.NoteSortOrder;
 import com.evernote.edam.type.Notebook;
 
 import java.util.List;
+
+import androidx.annotation.Nullable;
 
 /**
  * @author rwondratschek

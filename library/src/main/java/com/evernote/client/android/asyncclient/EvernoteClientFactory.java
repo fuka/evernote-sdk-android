@@ -2,8 +2,6 @@ package com.evernote.client.android.asyncclient;
 
 import android.content.Context;
 import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 
 import com.evernote.client.android.EvernoteSession;
 import com.evernote.client.android.EvernoteUtil;
@@ -32,6 +30,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * A factory to create async wrappers around a {@link NoteStore.Client}. Use the corresponding

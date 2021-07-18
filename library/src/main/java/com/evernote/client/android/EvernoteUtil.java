@@ -35,7 +35,6 @@ import android.content.pm.ResolveInfo;
 import android.content.pm.Signature;
 import android.os.Build;
 import android.os.Looper;
-import android.support.annotation.Nullable;
 import android.util.Base64;
 import android.webkit.CookieManager;
 import android.webkit.CookieSyncManager;
@@ -50,6 +49,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
 import java.util.Locale;
+
+import androidx.annotation.Nullable;
 
 @SuppressWarnings("unused")
 public final class EvernoteUtil {

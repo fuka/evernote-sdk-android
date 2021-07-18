@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +18,8 @@ import net.vrallev.android.task.TaskExecutor;
 import net.vrallev.android.task.TaskResult;
 
 import java.util.Locale;
+
+import androidx.annotation.NonNull;
 
 /**
  * Used if you call {@link EvernoteSession#authenticate(Activity)}. You shouldn't need interact

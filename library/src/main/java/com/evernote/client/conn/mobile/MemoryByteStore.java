@@ -25,10 +25,9 @@
  */
 package com.evernote.client.conn.mobile;
 
-
-import android.support.annotation.NonNull;
-
 import java.io.IOException;
+
+import androidx.annotation.NonNull;
 
 /**
  * Holds all the data in memory.

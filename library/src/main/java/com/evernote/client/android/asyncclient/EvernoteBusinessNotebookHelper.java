@@ -1,7 +1,5 @@
 package com.evernote.client.android.asyncclient;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 
 import com.evernote.client.android.EvernoteSession;
 import com.evernote.client.android.helper.EvernotePreconditions;
@@ -19,6 +17,9 @@ import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * Provides several helper methods for business notebooks. The easiest way to create an instance

@@ -2,7 +2,6 @@ package com.evernote.client.android.login;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v4.app.Fragment;
 import android.text.TextUtils;
 
 import com.evernote.client.android.EvernoteOAuthHelper;
@@ -16,6 +15,8 @@ import net.vrallev.android.task.Task;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
+
+import androidx.fragment.app.Fragment;
 
 /**
  * @author rwondratschek

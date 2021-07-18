@@ -1,7 +1,5 @@
 package com.evernote.client.android.asyncclient;
 
-import android.support.annotation.NonNull;
-
 import com.evernote.client.android.helper.EvernotePreconditions;
 import com.evernote.edam.error.EDAMNotFoundException;
 import com.evernote.edam.error.EDAMSystemException;
@@ -38,6 +36,8 @@ import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
+
+import androidx.annotation.NonNull;
 
 /**
  * An async wrapper for {@link NoteStore.Client}. Call {@link EvernoteClientFactory#getNoteStoreClient(String, String)}

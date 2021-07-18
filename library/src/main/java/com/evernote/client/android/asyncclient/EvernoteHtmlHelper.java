@@ -1,8 +1,6 @@
 package com.evernote.client.android.asyncclient;
 
 import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 
 import com.evernote.edam.type.Note;
 import com.squareup.okhttp.OkHttpClient;
@@ -13,6 +11,9 @@ import java.io.IOException;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * Provides helper methods to receive a {@link Note} as HTML instead of ENML. The easiest way to

@@ -1,7 +1,5 @@
 package com.evernote.android.demo.fragment.notebook;
 
-import android.support.v4.app.FragmentTransaction;
-
 import com.evernote.android.demo.R;
 import com.evernote.android.demo.fragment.AbstractContainerFragment;
 import com.evernote.android.demo.fragment.EmptyFragment;
@@ -12,6 +10,8 @@ import com.evernote.edam.type.Notebook;
 import net.vrallev.android.task.TaskResult;
 
 import java.util.List;
+
+import androidx.fragment.app.FragmentTransaction;
 
 /**
  * @author rwondratschek

@@ -1,7 +1,5 @@
 package com.evernote.client.android.asyncclient;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.Pair;
 
 import com.evernote.client.android.EvernoteSession;
@@ -29,6 +27,9 @@ import java.util.Set;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * Provides an unified search method to look for notes in multiple note stores.

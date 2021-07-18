@@ -2,8 +2,6 @@ package com.evernote.client.android.type;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 
 import com.evernote.client.android.asyncclient.EvernoteLinkedNotebookHelper;
 import com.evernote.client.android.asyncclient.EvernoteNoteStoreClient;
@@ -19,6 +17,9 @@ import com.evernote.edam.type.Notebook;
 import com.evernote.thrift.TException;
 
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * A reference to a note on the server. This class provides several helper methods to receive the note

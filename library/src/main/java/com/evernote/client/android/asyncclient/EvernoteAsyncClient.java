@@ -2,14 +2,15 @@ package com.evernote.client.android.asyncclient;
 
 import android.os.Handler;
 import android.os.Looper;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 
 import com.evernote.client.android.helper.EvernotePreconditions;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * An async client executes actions in the background and returns the result on the UI thread.

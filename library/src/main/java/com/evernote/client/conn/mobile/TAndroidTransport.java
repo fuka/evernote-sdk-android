@@ -1,7 +1,5 @@
 package com.evernote.client.conn.mobile;
 
-import android.support.annotation.NonNull;
-
 import com.evernote.thrift.transport.TTransport;
 import com.evernote.thrift.transport.TTransportException;
 import com.squareup.okhttp.MediaType;
@@ -16,6 +14,7 @@ import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
+import androidx.annotation.NonNull;
 import okio.BufferedSink;
 
 /**
